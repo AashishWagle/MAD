@@ -5,4 +5,7 @@
     <string name="count_initial_value">0</string>
     <string name="label_message">Hello Toast</string>
     <string name="toast_message">Hello Toast!</string>
+    <string name="Lcount_init_value">0</string>
+    <string name="Lbutton_lbl_count">Count</string>
+    <string name="Lbtn_toast_msg">Toast</string>
 </resources>
