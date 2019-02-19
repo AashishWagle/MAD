@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">helloToastHomework</string>
+    <string name="button_label_toast">Toast</string>
+    <string name="button_label_count">CLICK</string>
+    <string name="count_initial_value">0</string>
+    <string name="label_message">Hello Toast</string>
+    <string name="toast_message">Hello Toast!</string>
+    <string name="Lcount_init_value">0</string>
+    <string name="Lbutton_lbl_count">Count</string>
+    <string name="Lbtn_toast_msg">Toast</string>
+    <string name="buttonReset">ZERO</string>
+    <string name="btn_land_Reset">ZERO</string>
+</resources>
