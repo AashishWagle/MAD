@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Say Hello</string>
+    <string name="btnSayHello">SAY HELLO</string>
+    <string name="btnCount">COUNT</string>
+    <string name="defaultCount">0</string>
+    <string name="recMessage"></string>
+    <string name="countValue"></string>
+</resources>

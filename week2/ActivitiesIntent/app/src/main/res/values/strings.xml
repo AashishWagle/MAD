@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Activities Intent</string>
+    <string name="txt_placeholder">Enter your message here</string>
+    <string name="rply_placeholder">Enter your reply here</string>
+    <string name="btnSend">SEND</string>
+    <string name="btnReply">REPLY</string>
+    <string name="msgRec">Message Received</string>
+    <string name="replyRec">Reply Received</string>
+</resources>
