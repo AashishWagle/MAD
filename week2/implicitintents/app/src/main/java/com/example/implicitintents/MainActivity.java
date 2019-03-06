@@ -2,6 +2,7 @@ package com.example.implicitintents;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v4.app.ShareCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -70,5 +71,12 @@ public class MainActivity extends AppCompatActivity {
                 .setChooserTitle("Share this text with:")
                 .setText(sText)
                 .startChooser();
+    }
+
+    public void btnCamera(View view) {
+        Intent takePictureIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        if(takePictureIntent.resolveActivity(getPackageManager()) != null){
+            startActivity(takePictureIntent);
+        }
     }
 }

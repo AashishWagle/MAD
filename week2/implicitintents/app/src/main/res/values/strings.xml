@@ -8,4 +8,6 @@
 
     <string name="edit_share">\'Twas brillig and the slithy toves</string>
     <string name="button_uri">Open Website</string>
+
+    <string name="btn_camera">TAKE A PICTURE</string>
 </resources>
