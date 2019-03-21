@@ -12,6 +12,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    public static final String EXTRA_MESSAGE = "com.example.android.DroidCafe.MESSAGE";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,OrderActivity.class);
+                intent.putExtra(EXTRA_MESSAGE,"No items ordered!");
                 startActivity(intent);
             }
         });
@@ -57,20 +59,38 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void showDonutOrder(View view) {
-        displayToast(getString(R.string.donut_order_message));
+        //Intent intent = new Intent(MainActivity.this,OrderActivity.class);
+        //intent.putExtra(EXTRA_MESSAGE,R.string.donut_order_message);
+        //startActivity(intent);
+        //displayToast(getString(R.string.donut_order_message));
+        switchActivity(getString(R.string.donut_order_message));
     }
 
     /**
      * Shows a message that the ice cream sandwich image was clicked.
      */
     public void showIceCreamOrder(View view) {
-        displayToast(getString(R.string.ice_cream_order_message));
+        //Intent intent = new Intent(MainActivity.this,OrderActivity.class);
+        //intent.putExtra(EXTRA_MESSAGE,getString(R.string.ice_cream_order_message);
+        //startActivity(intent);
+        //displayToast(getString(R.string.ice_cream_order_message));
+        switchActivity(getString(R.string.ice_cream_order_message));
     }
 
     /**
      * Shows a message that the froyo image was clicked.
      */
     public void showFroyoOrder(View view) {
-        displayToast(getString(R.string.froyo_order_message));
+        //Intent intent = new Intent(MainActivity.this,OrderActivity.class);
+        //intent.putExtra(EXTRA_MESSAGE,R.string.froyo_order_message);
+        //startActivity(intent);
+        //displayToast(getString(R.string.froyo_order_message));
+        switchActivity(getString(R.string.froyo_order_message));
+    }
+
+    private void switchActivity(String message){
+        Intent intent = new Intent(MainActivity.this,OrderActivity.class);
+        intent.putExtra(EXTRA_MESSAGE,message);
+        startActivity(intent);
     }
 }
