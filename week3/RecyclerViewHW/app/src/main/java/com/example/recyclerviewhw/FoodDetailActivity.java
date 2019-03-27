@@ -3,6 +3,7 @@ package com.example.recyclerviewhw;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -27,6 +28,7 @@ public class FoodDetailActivity extends AppCompatActivity {
         Bundle extra = getIntent().getExtras();
         if (extra !=null){
             food = (Food)extra.getSerializable("Food");
+            Log.d("lentos",food.getProcedure());
             this.setTitle(food.getTitle());
             tvIngre.setText(food.getIngredients());
             tvProc.setText(food.getProcedure());
